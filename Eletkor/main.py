@@ -1,6 +1,3 @@
-from tkinter import messagebox
-
-
 def feladat(probalkozas):
 
     eletkor_szoveg = "Kérem adja meg az életkorát:"
@@ -8,16 +5,16 @@ def feladat(probalkozas):
     print("Ez a(z) " + str(probalkozas) + ". próbálkozásod")
     print("")
 
-    print(eletkor_szoveg)   ## Egy sor kihagyás, hogy átláthatóbb legyen a felhasználó számára.
+    print(eletkor_szoveg)
 
     ## Egész szám ellenőrzése
     try:
         eletkor = int(input())
     except:
-        print("Ez nem szám vagy nem egész szám!")
+        print("\nEz nem szám vagy nem egész szám!")
         return False
 
-    print("")    ## Egy sor kihagyás, hogy átláthatóbb legyen a felhasználó számára.
+    print("")    ## Egy sor kihagyás, hogy átláthatóbb legyen a felhasználó számára a kimenet.
 
 
     ## Életkor ellenőrzése a kritériumok szerint
@@ -28,7 +25,6 @@ def feladat(probalkozas):
     if eletkor > 110:
         print("Nem lehet az életkorod 110 év felett!")
         return False
-
 
 
 
